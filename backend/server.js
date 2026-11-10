@@ -20,7 +20,7 @@ function handleDisconnect() {
 
   db.connect(err => {
     if (err) {
-      console.error('Error al conectar a la base de datos, reintentando en 5 segundos...', err);
+      console.error('Reintentando conexion a la base de datos en 5 segundos...', err);
       setTimeout(handleDisconnect, 5000);
     } else {
       console.log('Conectado exitosamente a la base de datos MySQL');
@@ -32,7 +32,8 @@ function handleDisconnect() {
     if (err.code === 'PROTOCOL_CONNECTION_LOST') {
       handleDisconnect();
     } else {
-      throw err;
+      // Comentamos o removemos el throw err para evitar reinicios innecesarios
+      setTimeout(handleDisconnect, 5000);
     }
   });
 }
