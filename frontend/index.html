@@ -14,6 +14,12 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
+    <script>
+      // Si entra por la URL oficial, lo redirige automáticamente al servidor operativo
+      if (window.location.hostname === "threeangelsdental.si.com.bo") {
+        window.location.replace("http://threeangelsdental.catai.tecnologia.bo" + window.location.pathname + window.location.search);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

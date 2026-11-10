@@ -80,9 +80,9 @@ export default function App() {
           <img 
             src="/logo.png" 
             alt="Three Angels Dental Logo" 
-            style={{ width: '45px', height: '45px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #581c87' }} 
+            style={{ fontFamily: '"Pacifico", "Brush Script MT", cursive', width: '45px', height: '45px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #581c87' }} 
           />
-          <span style={{ fontWeight: '800', fontSize: '1.2rem', background: 'linear-gradient(135deg, #581c87, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <span style={{ fontFamily: '"Pacifico", "Brush Script MT", cursive', fontWeight: '800', fontSize: '1.2rem', background: 'linear-gradient(135deg, #581c87, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Three Angels Dental
           </span>
         </div>
@@ -118,7 +118,14 @@ export default function App() {
           <span style={{ background: 'rgba(255, 255, 255, 0.25)', padding: '0.4rem 1.2rem', borderRadius: '20px', fontSize: '0.9rem', fontWeight: '600', backdropFilter: 'blur(5px)' }}>
             ✨ Centro Odontológico Especializado en Sucre, Bolivia
           </span>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: '900', margin: '1.2rem 0', lineHeight: '1.2', textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
+          <h1 style={{ 
+            fontFamily: '"Pacifico", "Brush Script MT", cursive', 
+            fontSize: '3.5rem', 
+            fontWeight: '900', 
+            margin: '1.2rem 0', 
+            lineHeight: '1.2', 
+            textShadow: '0 2px 10px rgba(0,0,0,0.3)' 
+          }}>
             La sonrisa que va contigo
           </h1>
           <p style={{ fontSize: '1.2rem', color: '#e0f2fe', marginBottom: '2rem', fontWeight: '400', textShadow: '0 1px 5px rgba(0,0,0,0.3)' }}>
@@ -137,7 +144,7 @@ export default function App() {
       {/* 3. SECCIÓN SOBRE NOSOTROS */}
       <section id="nosotros" style={{ maxWidth: '1000px', margin: '3rem auto', padding: '0 1.5rem' }}>
         <div style={{ background: 'white', padding: '3rem', borderRadius: '24px', boxShadow: '0 20px 40px rgba(88, 28, 135, 0.06)', borderLeft: '8px solid #581c87' }}>
-          <h2 style={{ color: '#581c87', fontSize: '2.2rem', marginTop: 0, fontWeight: '800' }}>Sobre Nosotros</h2>
+          <h2 style={{ fontFamily: '"Pacifico", "Brush Script MT", cursive',color: '#581c87', fontSize: '2.2rem', marginTop: 0, fontWeight: '800' }}>Sobre Nosotros</h2>
           <p style={{ fontSize: '1.05rem', color: '#475569', lineHeight: '1.8' }}>
             En el corazón de Sucre, transformamos vidas a través de sonrisas saludables y radiantes para grandes y pequeños. Bajo la dirección y liderazgo de la Dra. Jesmil Deby Espinoza Jimenez, nuestra clínica se distingue por ofrecer una atención de excelencia, combinando un trato humano, cálido y absolutamente sin dolor.
             <br /><br />
@@ -151,7 +158,7 @@ export default function App() {
         <div style={{ background: 'linear-gradient(135deg, #e0f2fe 0%, #faf5ff 100%)', padding: '3rem', borderRadius: '24px', boxShadow: '0 15px 35px rgba(6, 182, 212, 0.1)', border: '2px solid #06b6d4', display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center' }}>
           <div style={{ flex: '1 1 450px' }}>
             <span style={{ background: '#06b6d4', color: 'white', padding: '0.3rem 1rem', borderRadius: '15px', fontSize: '0.85rem', fontWeight: 'bold' }}>Área Infantil</span>
-            <h2 style={{ color: '#0e7490', fontSize: '2.2rem', margin: '0.8rem 0', fontWeight: '800' }}>Atención Especializada en Niños</h2>
+            <h2 style={{ fontFamily: '"Pacifico", "Brush Script MT", cursive',color: '#0e7490', fontSize: '2.2rem', margin: '0.8rem 0', fontWeight: '800' }}>Atención Especializada en Niños</h2>
             <p style={{ color: '#334155', lineHeight: '1.7', fontSize: '1.05rem', marginBottom: '1.5rem' }}>
               Sabemos que la primera visita al dentista marca la diferencia. Por eso, contamos con <strong>indumentaria colorida, especializada y un manejo psicológico infantil</strong> único. Creamos un ambiente divertido y libre de miedo para que tus hijos disfruten cuidar sus dientes desde pequeños.
             </p>
@@ -172,7 +179,7 @@ export default function App() {
 
       {/* 5. GALERÍA DE TRATAMIENTOS Y ATENCIONES */}
       <section id="servicios" style={{ maxWidth: '1000px', margin: '4rem auto', padding: '0 1.5rem' }}>
-        <h2 style={{ textAlign: 'center', color: '#581c87', fontSize: '2.2rem', fontWeight: '800', marginBottom: '1rem' }}>Nuestros Tratamientos y Especialidades</h2>
+        <h2 style={{ fontFamily: '"Pacifico", "Brush Script MT", cursive',textAlign: 'center', color: '#581c87', fontSize: '2.2rem', fontWeight: '800', marginBottom: '1rem' }}>Nuestros Tratamientos y Especialidades</h2>
         <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '2.5rem' }}>Conoce la variedad de servicios profesionales que ofrecemos en Sucre.</p>
         
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem' }}>
@@ -201,10 +208,10 @@ export default function App() {
 
       {/* 6. TESTIMONIOS Y FORMULARIO DE OPINIONES */}
       <section id="testimonios" style={{ maxWidth: '1000px', margin: '4rem auto', padding: '0 1.5rem' }}>
-        <h2 style={{ textAlign: 'center', color: '#581c87', fontSize: '2.2rem', fontWeight: '800', marginBottom: '2.5rem' }}>Lo que opinan nuestros pacientes</h2>
+        <h2 style={{ fontFamily: '"Pacifico", "Brush Script MT", cursive',textAlign: 'center', color: '#581c87', fontSize: '2.2rem', fontWeight: '800', marginBottom: '2.5rem' }}>Lo que opinan nuestros pacientes</h2>
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-          {testimoniosLista.map((t, index) => (
+          {testimoniosLista.map((t: { nombre: string; comentario: string }, index: number) => (
             <div key={index} style={{ background: 'white', padding: '2rem', borderRadius: '20px', boxShadow: '0 10px 25px rgba(0,0,0,0.04)', borderTop: '4px solid #06b6d4' }}>
               <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '0.8rem' }}>⭐⭐⭐⭐⭐</div>
               <p style={{ fontStyle: 'italic', color: '#334155', lineHeight: '1.6', marginBottom: '1rem' }}>"{t.comentario}"</p>
@@ -245,7 +252,7 @@ export default function App() {
       {/* 7. FORMULARIO DE AGENDAR CITA (WHATSAPP) Y PAGO CON PAYPAL */}
       <section id="agendar" style={{ maxWidth: '1000px', margin: '4rem auto', padding: '0 1.5rem' }}>
         <div style={{ background: 'white', padding: '3rem', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.06)', borderTop: '6px solid #581c87' }}>
-          <h2 style={{ color: '#581c87', fontSize: '2.2rem', marginTop: 0, fontWeight: '800' }}>📅 Reserva tu Cita Online y Pago</h2>
+          <h2 style={{ fontFamily: '"Pacifico", "Brush Script MT", cursive',color: '#581c87', fontSize: '2.2rem', marginTop: 0, fontWeight: '800' }}>📅 Reserva tu Cita Online y Pago</h2>
           <p style={{ color: '#64748b', marginBottom: '2rem' }}>Completa tus datos para agendar por WhatsApp o realiza tu pago seguro en línea con PayPal:</p>
           
           <form onSubmit={handleWhatsAppBooking} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem', maxWidth: '600px' }}>
