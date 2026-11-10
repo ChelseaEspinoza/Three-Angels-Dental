@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 {
-  "name": "dental-backend",
+  "name": "backend",
   "version": "1.0.0",
+  "description": "Three Angels Dental API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,20 +9,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mysql2": "^3.6.5"
+    "mysql2": "^3.9.2"
   }
-=======
-{
-  "name": "dental-backend",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "mysql2": "^3.6.5"
-  }
->>>>>>> 28813b58bd0ebf55479f9d3382f6c80c22418254
 }
