@@ -8,8 +8,8 @@ services:
       MYSQL_DATABASE: dental_db
       MYSQL_USER: dental_user
       MYSQL_PASSWORD: dental_password
-    ports:
-      - "3306:3306"
+    #ports:
+    #  - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
 
