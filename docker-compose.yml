@@ -1,0 +1,44 @@
+services:
+  database:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: dental_db
+      MYSQL_USER: dental_user
+      MYSQL_PASSWORD: dental_password
+    volumes:
+      - db_data:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      - PORT=5000
+      - DB_HOST=database
+      - DB_USER=dental_user
+      - DB_PASSWORD=dental_password
+      - DB_NAME=dental_db
+      # Panel de administración (/admin). Cámbialos en Coolify → Environment Variables.
+      - ADMIN_USER=${ADMIN_USER:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-ThreeAngels2026!}
+      - TOKEN_SECRET=${TOKEN_SECRET:-cambia-esto-por-un-texto-largo-y-secreto}
+      - ZONA_HORARIA=America/La_Paz
+    volumes:
+      - uploads:/app/uploads   # imágenes subidas desde el panel
+    expose:
+      - "5000"
+    depends_on:
+      - database
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    expose:
+      - "80"
+    depends_on:
+      - backend
+
+volumes:
+  db_data:
+  uploads:

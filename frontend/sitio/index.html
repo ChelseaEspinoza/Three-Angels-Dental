@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es-BO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =========================================================
+         GOOGLE ANALYTICS 4 (gtag.js)
+         👉 Reemplaza G-XXXXXXXXXX por tu ID de medición en las DOS líneas marcadas.
+         ========================================================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> <!-- 👈 1/2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // send_page_view: false → las páginas vistas se envían desde React en cada cambio de ruta.
+      gtag('config', 'G-XXXXXXXXXX', { send_page_view: false }); // 👈 2/2
+    </script>
+
+    <script>
+      // Si entra por la URL oficial antigua, lo redirige al servidor operativo
+      if (window.location.hostname === "threeangelsdental.si.com.bo") {
+        window.location.replace("https://threeangelsdental.catai.tecnologia.bo" + window.location.pathname + window.location.search);
+      }
+    </script>
+
+    <!-- ===================== SEO ===================== -->
+    <title>Three Angels Dental | Clínica dental en Sucre, Bolivia</title>
+    <meta name="description" content="Clínica dental en Sucre, Bolivia: ortodoncia, limpieza dental, odontopediatría, cirugía de cordales y tienda de productos de higiene bucal con delivery. Reserva tu cita online." />
+    <meta name="keywords" content="clínica dental en Sucre, dentista Sucre, ortodoncia Sucre, brackets Sucre, odontopediatría Sucre, limpieza dental Sucre, productos higiene bucal, cepillo dental, Three Angels Dental, Bolivia" />
+    <meta name="author" content="Three Angels Dental" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#581c87" />
+    <meta name="geo.region" content="BO-H" />
+    <meta name="geo.placename" content="Sucre" />
+    <link rel="canonical" href="https://threeangelsdental.catai.tecnologia.bo/" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- Open Graph (Facebook, Instagram, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_BO" />
+    <meta property="og:site_name" content="Three Angels Dental" />
+    <meta property="og:title" content="Three Angels Dental | Clínica dental en Sucre" />
+    <meta property="og:description" content="La sonrisa que va contigo. Ortodoncia, odontopediatría, limpieza dental y tienda de higiene bucal en Sucre, Bolivia." />
+    <meta property="og:url" content="https://threeangelsdental.catai.tecnologia.bo/" />
+    <meta property="og:image" content="https://threeangelsdental.catai.tecnologia.bo/3.jpeg" />
+    <meta property="og:image:alt" content="Consultorio de Three Angels Dental en Sucre" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Datos estructurados para Google (ficha de clínica dental) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Three Angels Dental",
+        "url": "https://threeangelsdental.catai.tecnologia.bo/",
+        "logo": "https://threeangelsdental.catai.tecnologia.bo/logo.png",
+        "image": "https://threeangelsdental.catai.tecnologia.bo/3.jpeg",
+        "telephone": "+59178666840",
+        "priceRange": "Bs. 100 - Bs. 1700",
+        "address": { "@type": "PostalAddress", "addressLocality": "Sucre", "addressRegion": "Chuquisaca", "addressCountry": "BO" },
+        "sameAs": ["https://www.facebook.com/share/1CjuDVDn86/", "https://www.instagram.com/three.angels.sucre"]
+      }
+    </script>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript>Activa JavaScript para usar el sitio de Three Angels Dental.</noscript>
+    <div id="root"></div>
+    <!-- Configuración editable (PayPal, WhatsApp, redes, videos, horarios) -->
+    <script src="/config.js"></script>
+    <link rel="stylesheet" href="/assets/app.css?v=202611170740" />
+    <script defer src="/assets/app.js?v=202611170740"></script>
+  </body>
+</html>

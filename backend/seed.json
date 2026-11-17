@@ -1,0 +1,299 @@
+{
+  "productos": [
+    {
+      "id": "cep-suave",
+      "nombre": "Cepillo dental suave",
+      "categoria": "Cepillos",
+      "precio": 18,
+      "icono": "🪥",
+      "descripcion": "Cerdas ultra suaves para encías sensibles. Cabezal compacto.",
+      "stock": 20
+    },
+    {
+      "id": "cep-medio",
+      "nombre": "Cepillo dental medio",
+      "categoria": "Cepillos",
+      "precio": 15,
+      "icono": "🪥",
+      "descripcion": "Limpieza diaria eficaz con cerdas de dureza media.",
+      "stock": 20
+    },
+    {
+      "id": "cep-bambu",
+      "nombre": "Cepillo de bambú ecológico",
+      "categoria": "Cepillos",
+      "precio": 22,
+      "icono": "🎋",
+      "descripcion": "Mango biodegradable de bambú y cerdas suaves con carbón.",
+      "destacado": true,
+      "stock": 20
+    },
+    {
+      "id": "cep-electrico",
+      "nombre": "Cepillo eléctrico recargable",
+      "categoria": "Cepillos",
+      "precio": 280,
+      "icono": "⚡",
+      "descripcion": "Vibración sónica, 3 modos de limpieza y temporizador de 2 minutos.",
+      "destacado": true,
+      "stock": 20
+    },
+    {
+      "id": "cep-infantil",
+      "nombre": "Cepillo infantil con personajes",
+      "categoria": "Cepillos",
+      "precio": 16,
+      "icono": "🧸",
+      "descripcion": "Cerdas extra suaves y mango ergonómico para niños de 2 a 8 años.",
+      "stock": 20
+    },
+    {
+      "id": "pasta-blanq",
+      "nombre": "Pasta blanqueadora",
+      "categoria": "Pastas dentales",
+      "precio": 32,
+      "icono": "✨",
+      "descripcion": "Remueve manchas superficiales de café y té. Con flúor.",
+      "stock": 20
+    },
+    {
+      "id": "pasta-sens",
+      "nombre": "Pasta para dientes sensibles",
+      "categoria": "Pastas dentales",
+      "precio": 38,
+      "icono": "🧊",
+      "descripcion": "Alivia la sensibilidad al frío y al calor desde la primera semana.",
+      "destacado": true,
+      "stock": 20
+    },
+    {
+      "id": "pasta-fluor",
+      "nombre": "Pasta con flúor protección total",
+      "categoria": "Pastas dentales",
+      "precio": 20,
+      "icono": "🛡️",
+      "descripcion": "Previene caries y fortalece el esmalte. Uso familiar.",
+      "stock": 20
+    },
+    {
+      "id": "pasta-kids",
+      "nombre": "Pasta infantil sabor fresa",
+      "categoria": "Pastas dentales",
+      "precio": 19,
+      "icono": "🍓",
+      "descripcion": "Flúor en concentración adecuada para niños. Sabor suave.",
+      "stock": 20
+    },
+    {
+      "id": "enj-clasico",
+      "nombre": "Enjuague bucal menta 500 ml",
+      "categoria": "Enjuagues",
+      "precio": 35,
+      "icono": "🌿",
+      "descripcion": "Aliento fresco por 12 horas y reducción de placa.",
+      "stock": 20
+    },
+    {
+      "id": "enj-sin-alcohol",
+      "nombre": "Enjuague sin alcohol 500 ml",
+      "categoria": "Enjuagues",
+      "precio": 40,
+      "icono": "💧",
+      "descripcion": "Fórmula suave que no arde. Ideal para encías sensibles.",
+      "stock": 20
+    },
+    {
+      "id": "enj-clorhex",
+      "nombre": "Enjuague con clorhexidina",
+      "categoria": "Enjuagues",
+      "precio": 45,
+      "icono": "🧪",
+      "descripcion": "Antiséptico para uso post tratamiento según indicación.",
+      "stock": 20
+    },
+    {
+      "id": "hilo",
+      "nombre": "Hilo dental encerado 50 m",
+      "categoria": "Hilo e interdentales",
+      "precio": 18,
+      "icono": "🧵",
+      "descripcion": "Se desliza fácil entre los dientes sin deshilacharse.",
+      "stock": 20
+    },
+    {
+      "id": "hilo-arcos",
+      "nombre": "Arcos de hilo dental (x50)",
+      "categoria": "Hilo e interdentales",
+      "precio": 25,
+      "icono": "🎯",
+      "descripcion": "Prácticos para llevar; ideales para niños y adultos.",
+      "stock": 20
+    },
+    {
+      "id": "interdental",
+      "nombre": "Cepillos interdentales (x6)",
+      "categoria": "Hilo e interdentales",
+      "precio": 30,
+      "icono": "🔹",
+      "descripcion": "Limpian espacios entre dientes, puentes e implantes.",
+      "stock": 20
+    },
+    {
+      "id": "cera-orto",
+      "nombre": "Cera de ortodoncia",
+      "categoria": "Ortodoncia",
+      "precio": 12,
+      "icono": "🟣",
+      "descripcion": "Evita roces y llagas causados por los brackets.",
+      "stock": 20
+    },
+    {
+      "id": "cep-orto",
+      "nombre": "Cepillo para ortodoncia",
+      "categoria": "Ortodoncia",
+      "precio": 24,
+      "icono": "🦷",
+      "descripcion": "Cerdas en forma de V para limpiar alrededor de los brackets.",
+      "stock": 20
+    },
+    {
+      "id": "kit-orto",
+      "nombre": "Kit de ortodoncia completo",
+      "categoria": "Kits",
+      "precio": 85,
+      "icono": "🎒",
+      "descripcion": "Cepillo en V, interdentales, cera, hilo enhebrador y estuche.",
+      "destacado": true,
+      "stock": 20
+    },
+    {
+      "id": "kit-viaje",
+      "nombre": "Kit de higiene de viaje",
+      "categoria": "Kits",
+      "precio": 45,
+      "icono": "🧳",
+      "descripcion": "Cepillo plegable, pasta mini, hilo dental y estuche.",
+      "stock": 20
+    },
+    {
+      "id": "kit-familiar",
+      "nombre": "Kit familiar de higiene bucal",
+      "categoria": "Kits",
+      "precio": 120,
+      "icono": "👨‍👩‍👧",
+      "descripcion": "4 cepillos, 2 pastas, enjuague y hilo dental para toda la familia.",
+      "stock": 20
+    }
+  ],
+  "servicios": [
+    {
+      "id": "limpieza",
+      "nombre": "Limpieza Dental",
+      "categoria": "Prevención",
+      "precio": 150,
+      "duracion": "45 min",
+      "resumen": "Profilaxis profesional con ultrasonido para eliminar sarro y manchas.",
+      "incluye": [
+        "Revisión completa",
+        "Destartraje con ultrasonido",
+        "Pulido y aplicación de flúor"
+      ],
+      "imagen": "/3.jpeg",
+      "alt": "Limpieza dental profesional en Three Angels Dental, Sucre"
+    },
+    {
+      "id": "odontopediatria",
+      "nombre": "Odontopediatría",
+      "categoria": "Niños",
+      "precio": 100,
+      "duracion": "30 min",
+      "resumen": "Atención infantil sin miedo, con manejo de conducta y ambiente divertido.",
+      "incluye": [
+        "Prevención de caries",
+        "Selladores de fosas y fisuras",
+        "Ortodoncia interceptiva temprana"
+      ],
+      "imagen": "/5.jpeg",
+      "alt": "Odontopediatría: atención dental para niños en Sucre"
+    },
+    {
+      "id": "cordales",
+      "nombre": "Cirugía de Cordales",
+      "categoria": "Especialidades",
+      "precio": 350,
+      "desde": true,
+      "duracion": "60 min",
+      "resumen": "Extracción segura de terceros molares con técnica mínimamente invasiva.",
+      "incluye": [
+        "Evaluación radiográfica",
+        "Anestesia local",
+        "Control post operatorio"
+      ],
+      "imagen": "/2.jpeg",
+      "alt": "Cirugía de cordales (muelas del juicio) en Sucre"
+    },
+    {
+      "id": "ortodoncia",
+      "nombre": "Ortodoncia",
+      "categoria": "Especialidades",
+      "precio": 1700,
+      "desde": true,
+      "duracion": "Tratamiento",
+      "resumen": "Brackets metálicos y estéticos para una sonrisa perfectamente alineada.",
+      "incluye": [
+        "Estudio y plan de tratamiento",
+        "Instalación de brackets",
+        "Controles mensuales"
+      ],
+      "imagen": "/4.jpeg",
+      "alt": "Ortodoncia con brackets en Sucre, Bolivia"
+    },
+    {
+      "id": "protesis",
+      "nombre": "Prótesis Dental",
+      "categoria": "Especialidades",
+      "precio": 1200,
+      "desde": true,
+      "duracion": "Tratamiento",
+      "resumen": "Restauración estética y funcional de piezas dentales perdidas.",
+      "incluye": [
+        "Prótesis fija o removible",
+        "Toma de impresiones",
+        "Ajustes y controles"
+      ],
+      "imagen": "/6.jpeg",
+      "alt": "Prótesis dental fija y removible en Sucre"
+    },
+    {
+      "id": "endodoncia",
+      "nombre": "Endodoncia",
+      "categoria": "Especialidades",
+      "precio": 500,
+      "desde": true,
+      "duracion": "60–90 min",
+      "resumen": "Tratamiento de conducto para salvar tu pieza dental y eliminar el dolor.",
+      "incluye": [
+        "Diagnóstico",
+        "Tratamiento de conductos",
+        "Sellado y control"
+      ],
+      "imagen": "/2.jpeg",
+      "alt": "Endodoncia o tratamiento de conducto en Sucre"
+    },
+    {
+      "id": "blanqueamiento",
+      "nombre": "Blanqueamiento Dental",
+      "categoria": "Estética",
+      "precio": 800,
+      "duracion": "60 min",
+      "resumen": "Aclara varios tonos tu sonrisa de forma segura y supervisada.",
+      "incluye": [
+        "Evaluación de sensibilidad",
+        "Blanqueamiento en consultorio",
+        "Kit de mantenimiento"
+      ],
+      "imagen": "/3.jpeg",
+      "alt": "Blanqueamiento dental en Sucre, Bolivia"
+    }
+  ]
+}
