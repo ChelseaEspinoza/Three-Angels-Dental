@@ -5,7 +5,7 @@ import { IconMessenger, IconTelegram, IconWhatsapp } from '../components/Icons';
 import PageHeader from '../components/PageHeader';
 import SocialLinks from '../components/SocialLinks';
 import { CLINICA, HORARIOS } from '../config';
-import { useSitio } from '../lib/sitio';
+import { enlaceValido, useSitio } from '../lib/sitio';
 import { track } from '../lib/analytics';
 import { abrirWhatsApp } from '../lib/format';
 import { useSeo } from '../lib/seo';
@@ -73,8 +73,8 @@ export default function Contact() {
               <a className="chat-op wa" href={`https://wa.me/${CLINICA.whatsapp}`} target="_blank" rel="noopener noreferrer" onClick={() => track('whatsapp_click', { origen: 'contacto' })}>
                 <IconWhatsapp size={20} /> WhatsApp {CLINICA.telefonoVisible}
               </a>
-              <a className="chat-op ms" href={REDES.messenger} target="_blank" rel="noopener noreferrer"><IconMessenger size={20} /> Messenger</a>
-              <a className="chat-op tg" href={REDES.telegram} target="_blank" rel="noopener noreferrer"><IconTelegram size={20} /> Telegram</a>
+              {enlaceValido(REDES.messenger) && <a className="chat-op ms" href={REDES.messenger} target="_blank" rel="noopener noreferrer"><IconMessenger size={20} /> Messenger</a>}
+              {enlaceValido(REDES.telegram) && <a className="chat-op tg" href={REDES.telegram} target="_blank" rel="noopener noreferrer"><IconTelegram size={20} /> Telegram</a>}
             </div>
             <SocialLinks />
           </div>

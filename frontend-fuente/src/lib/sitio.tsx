@@ -29,3 +29,7 @@ export function SitioProvider({ children }: { children: ReactNode }) {
 }
 
 export const useSitio = () => useContext(SitioContext);
+
+/** true si el enlace es real. Los vacíos o de ejemplo (TU_USUARIO) se ocultan en la web. */
+export const enlaceValido = (url?: string) =>
+  !!url && /^https?:\/\/\S+$/.test(url.trim()) && !/TU_USUARIO|tu-usuario|tu-pagina|tu-canal/i.test(url);

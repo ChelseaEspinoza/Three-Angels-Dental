@@ -90,7 +90,7 @@ export default function Videos() {
         />
         <section className="adm-card adm-form vid-redes">
           <h2>Enlaces de redes sociales</h2>
-          <p className="adm-muted">Se usan en el pie de página, en Contacto, en Redes y videos y en el botón de chat.</p>
+          <p className="adm-muted">Se usan en el pie de página, en Contacto, en Redes y videos y en el botón de chat. <strong>Deja vacío lo que no uses</strong> (por ejemplo Messenger o Telegram): no se mostrará en la web.</p>
           {NOMBRES_REDES.map(([k, nombre, ejemplo]) => (
             <label key={k}>
               {nombre}

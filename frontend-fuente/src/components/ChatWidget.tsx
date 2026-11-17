@@ -1,7 +1,7 @@
 // Botón flotante de chat: WhatsApp, Messenger y Telegram.
 import { useState } from 'react';
 import { CLINICA } from '../config';
-import { useSitio } from '../lib/sitio';
+import { enlaceValido, useSitio } from '../lib/sitio';
 import { track } from '../lib/analytics';
 import { IconMessenger, IconTelegram, IconWhatsapp } from './Icons';
 
@@ -14,7 +14,7 @@ export default function ChatWidget() {
     { nombre: 'WhatsApp', clase: 'wa', href: `https://wa.me/${CLINICA.whatsapp}?text=${encodeURIComponent(MENSAJE)}`, Icono: IconWhatsapp },
     { nombre: 'Messenger', clase: 'ms', href: REDES.messenger, Icono: IconMessenger },
     { nombre: 'Telegram', clase: 'tg', href: REDES.telegram, Icono: IconTelegram },
-  ];
+  ].filter((c) => enlaceValido(c.href)); // sin enlace = no se muestra
 
   return (
     <div className={`chat ${abierto ? 'abierto' : ''}`}>

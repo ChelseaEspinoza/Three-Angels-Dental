@@ -1,5 +1,5 @@
 // Íconos de redes sociales oficiales.
-import { useSitio } from '../lib/sitio';
+import { enlaceValido, useSitio } from '../lib/sitio';
 import type { Redes } from '../lib/sitio';
 import { track } from '../lib/analytics';
 import { IconFacebook, IconInstagram, IconTiktok, IconYoutube } from './Icons';
@@ -14,7 +14,7 @@ export const listaRedes = (REDES: Redes) => [
 export default function SocialLinks({ size = 20 }: { size?: number }) {
   return (
     <div className="social">
-      {listaRedes(useSitio().redes).map(({ nombre, href, Icono, clase }) => (
+      {listaRedes(useSitio().redes).filter((r) => enlaceValido(r.href)).map(({ nombre, href, Icono, clase }) => (
         <a
           key={nombre}
           href={href}

@@ -3,7 +3,7 @@ import { IconFacebook, IconInstagram, IconTiktok, IconYoutube } from '../compone
 import PageHeader from '../components/PageHeader';
 import Reveal from '../components/Reveal';
 import { TikTokVideo, VideoSubido, YouTubeVideo } from '../components/Videos';
-import { useSitio } from '../lib/sitio';
+import { enlaceValido, useSitio } from '../lib/sitio';
 import type { Redes } from '../lib/sitio';
 import { track } from '../lib/analytics';
 import { useSeo } from '../lib/seo';
@@ -32,7 +32,7 @@ export default function Community() {
 
       <section className="section container">
         <div className="grid-4">
-          {canales(redes).map(({ nombre, texto, href, Icono, clase, cta }, i) => (
+          {canales(redes).filter((c) => enlaceValido(c.href)).map(({ nombre, texto, href, Icono, clase, cta }, i) => (
             <Reveal key={nombre} delay={i * 80}>
               <a className={`card canal ${clase}`} href={href} target="_blank" rel="noopener noreferrer" onClick={() => track('social_click', { red: nombre, origen: 'comunidad' })}>
                 <span className="canal-icono"><Icono size={30} /></span>
