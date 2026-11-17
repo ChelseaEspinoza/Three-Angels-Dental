@@ -11,10 +11,10 @@ import { Link } from '../lib/router';
 import { useSeo } from '../lib/seo';
 
 const BENEFICIOS = [
-  { icono: '😌', titulo: 'Atención sin dolor', texto: 'Técnicas modernas y trato cálido en cada tratamiento.' },
-  { icono: '🧼', titulo: 'Bioseguridad estricta', texto: 'Instrumental esterilizado y protocolos certificados.' },
-  { icono: '👶', titulo: 'Especialistas en niños', texto: 'Ambiente divertido y manejo de conducta sin traumas.' },
-  { icono: '💳', titulo: 'Pago fácil', texto: 'Paga online con PayPal o en consultorio con efectivo/QR.' },
+  { imagen: '/beneficios/sin-dolor.jpg', alt: 'Paciente sonriendo durante una atención dental sin dolor', titulo: 'Atención sin dolor', texto: 'Técnicas modernas y trato cálido en cada tratamiento.' },
+  { imagen: '/beneficios/bioseguridad.jpg', alt: 'Odontóloga con equipo de bioseguridad completo atendiendo a un paciente', titulo: 'Bioseguridad estricta', texto: 'Instrumental esterilizado y protocolos certificados.' },
+  { imagen: '/beneficios/ninos.jpg', alt: 'Niño en una revisión dental', titulo: 'Especialistas en niños', texto: 'Ambiente divertido y manejo de conducta sin traumas.' },
+  { imagen: '/beneficios/pago.jpg', alt: 'Billetes y monedas en bolivianos', titulo: 'Pago fácil', texto: 'Paga online con PayPal o en consultorio con efectivo/QR.' },
 ];
 
 const ACCESOS = [
@@ -108,7 +108,7 @@ export default function Home() {
           {BENEFICIOS.map((b, i) => (
             <Reveal key={b.titulo} delay={i * 80}>
               <article className="card beneficio">
-                <span className="beneficio-icono" aria-hidden>{b.icono}</span>
+                <div className="beneficio-foto"><img src={b.imagen} alt={b.alt} loading="lazy" /></div>
                 <h3>{b.titulo}</h3>
                 <p>{b.texto}</p>
               </article>

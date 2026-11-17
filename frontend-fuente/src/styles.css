@@ -153,11 +153,14 @@ a.card:hover, .servicio:hover, .producto:hover { transform: translateY(-6px); bo
 
 /* ---------- Inicio ---------- */
 .beneficios { margin-top: -2rem; position: relative; z-index: 2; }
-.beneficio { text-align: center; height: 100%; }
-.beneficio-icono { display: inline-grid; place-items: center; width: 64px; height: 64px; border-radius: 18px; background: var(--tinte); font-size: 1.9rem; margin-bottom: 0.8rem; transition: transform 0.3s; }
-.beneficio:hover .beneficio-icono { transform: rotate(-8deg) scale(1.1); }
-.beneficio h3 { color: var(--morado); font-size: 1.1rem; }
-.beneficio p { color: var(--suave); margin: 0; font-size: 0.93rem; }
+/* Tarjetas de beneficios con foto arriba */
+.beneficio { text-align: center; height: 100%; padding: 0; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
+.beneficio:hover { transform: translateY(-6px); box-shadow: var(--sombra-hover); }
+.beneficio-foto { aspect-ratio: 16 / 10; overflow: hidden; background: var(--tinte); }
+.beneficio-foto img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.beneficio:hover .beneficio-foto img { transform: scale(1.06); }
+.beneficio h3 { color: var(--morado); font-size: 1.1rem; margin: 1.1rem 1.2rem 0.4rem; }
+.beneficio p { color: var(--suave); margin: 0 1.2rem 1.4rem; font-size: 0.93rem; }
 .split-img { position: relative; }
 .split-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; box-shadow: var(--sombra-hover); }
 .floating-card { position: absolute; left: -1rem; bottom: -1.2rem; background: #fff; border-radius: 16px; padding: 0.9rem 1.2rem; box-shadow: var(--sombra-hover); border-left: 5px solid var(--cian); }
