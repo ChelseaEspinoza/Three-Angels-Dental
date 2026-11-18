@@ -7,7 +7,10 @@ type Video = { id: string; titulo: string };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const C: Record<string, any> = (window as unknown as { THREE_ANGELS?: Record<string, unknown> }).THREE_ANGELS || {};
 
-export const PAYPAL_CLIENT_ID: string = C.paypalClientId ?? 'PEGA_AQUI_TU_CLIENT_ID_DE_PAYPAL';
+// Client ID de PayPal (Sandbox = pagos de prueba). Si config.js trae otro ID real, se usa ese.
+const PAYPAL_POR_DEFECTO = 'TDhqSjW8_sT7M0bkjqKlZYv0YW3JNyjJgZbWr2Hj0';
+const paypalConfig = String(C.paypalClientId || '');
+export const PAYPAL_CLIENT_ID: string = paypalConfig && !paypalConfig.startsWith('PEGA_AQUI') ? paypalConfig : PAYPAL_POR_DEFECTO;
 export const PAYPAL_MONEDA = 'USD'; // PayPal no acepta Bolivianos
 export const TIPO_CAMBIO_BS_POR_USD: number = C.tipoCambioBsPorUsd ?? 6.96;
 export const ANTICIPO_CITA_PORCENTAJE: number = C.anticipoCitaPorcentaje ?? 100;
@@ -46,3 +49,11 @@ export const REDES: { facebook: string; instagram: string; youtube: string; tikt
 
 export const VIDEOS_YOUTUBE: Video[] = C.videosYoutube ?? [];
 export const VIDEOS_TIKTOK: Video[] = C.videosTiktok ?? [];
+
+// Chat en vivo (tawk.to). Se puede cambiar en config.js con:
+//   chatEnVivo: { propiedad: '...', widget: '...' }   (o propiedad: '' para quitar el chat)
+export const CHAT_EN_VIVO: { propiedad: string; widget: string } = {
+  propiedad: '6afd0a04aba2d83cc2da1cb2',
+  widget: '1k7m6u997',
+  ...(C.chatEnVivo || {}),
+};
