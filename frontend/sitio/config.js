@@ -7,7 +7,7 @@ window.THREE_ANGELS = {
   // ---- 1) PAYPAL ----------------------------------------------------
   // Client ID de developer.paypal.com → Apps & Credentials.
   // El de la pestaña "Sandbox" hace pagos de prueba; el de "Live", pagos reales.
-  paypalClientId: 'PEGA_AQUI_TU_CLIENT_ID_DE_PAYPAL',
+  paypalClientId: 'BAAvKNwX6fIa1y8dPvd9LImnIR4Qe7Q04O22iInNiTDhqSjW8_sT7M0bkjqKlZYv0YW3JNyjJgZbWr2Hj0',
   tipoCambioBsPorUsd: 6.96,     // para mostrar y cobrar el equivalente en USD
   anticipoCitaPorcentaje: 100,  // % del precio de la cita que se cobra online (100 = completo)
 
